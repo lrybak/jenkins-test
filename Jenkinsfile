@@ -1,3 +1,11 @@
+properties([
+  parameters([
+    string(name: 'submodule', defaultValue: 'x'),
+    string(name: 'submodule_branch', defaultValue: 'y'),
+    string(name: 'commit_sha', defaultValue: 'z'),
+  ])
+])
+
 pipeline {
     agent any
 
